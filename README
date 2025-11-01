@@ -1,0 +1,44 @@
+
+# Merge Time Ranges - NodeJS Module
+
+## Description
+This module exports a function mergeTimeRanges that merges overlapping or closely spaced time intervals based on a threshold value.
+
+## Function Signature
+js
+mergeTimeRanges(ranges, threshold)
+
+- ranges: Array of [start, end] time ranges (in milliseconds)
+- threshold: Maximum allowed gap between two ranges to still merge them
+
+##  Example Usage
+js
+const mergeTimeRanges = require('./my-module.js');
+
+const ranges = [
+  [1000, 2000],
+  [2500, 4000],
+  [3900, 4100],
+  [8000, 9000],
+  [9050, 9500]
+];
+
+const threshold = 200;
+console.log(mergeTimeRanges(ranges, threshold));
+// Output: [ [1000, 2000], [2500, 4100], [8000, 9500] ]
+
+
+## File Structure
+/merge-time-ranges
+- my-module.js     # Main function
+- package.json     # Module metadata
+- README.md        # How to use the module
+
+
+## How to Run
+1. Place the files in a folder.
+2. Run using Node.js:
+node test.js
+
+---
+Prepared by: Palleveni Goutham
