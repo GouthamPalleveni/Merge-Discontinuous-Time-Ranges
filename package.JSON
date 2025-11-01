@@ -1,0 +1,9 @@
+{
+  "name": "merge-time-ranges",
+  "version": "1.0.0",
+  "main": "my-module.js",
+  "type": "commonjs",
+  "description": "Utility to merge time ranges within a threshold",
+  "author": "Palleveni Goutham",
+  "license": "MIT"
+}
